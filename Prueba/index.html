@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <title>Entropy Travelling</title>
+      <meta charset="UTF-8">
+      <meta name="U-tad" content="Web Test 01">
+      <link href="estiloweb.css" type="text/css" rel="stylesheet">
+      <link rel="icon" type="image/png" href="entropylogo.png">
+
+      <!--Estilo dentro del <head> del documento HTML fuera del CSS (por comodidad)-->
+      <style>
+        body,h1,h5 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .bgimg {
+          background-image: url("plane.gif");
+          min-height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+      </style>
+  </head>
+<!--【=◈︿◈=】-->
+  <body>
+
+      <div class="bgimg display-container text-white">
+      <div class="display-middle jumbo">
+    <p>Bienvenido/a a el sitio web de Entropy Travelling.</p>
+      </div>
+      <div class="display-topleft container xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="button black">Información</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="button black">Contacto</button></p>
+          <p><button onclick="document.getElementById('nothing').style.display='block'" class="button black"><a href="./index2.html">Novedades</a></button></p>
+          <p><button onclick="document.getElementById('nothing').style.display='block'" class="button black"><a href="./index3.html">Nuestros servicios</a></button></p>
+    </div>
+    <div class="display-bottomleft container">
+    <p class="xlarge">Tu sitio web de viajes (disponible próximamente).</p>
+    <p class="large">Las Rozas de Madrid, Madrid</p>
+    <p><a href="https://www.instagram.com/entropytravelling/?hl=es" target="_blank">Instagram</a>【=◈︿◈=】</p>
+    </div>
+    </div>
+
+<!-- Menu Modal -->
+<div id="menu" class="modal">
+  <div class="modal-content animate-zoom">
+    <div class="container black display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="button display-topright large">x</span>
+      <h1>¿Quiénes somos?</h1>
+    </div>
+    <p>Somos cuatro alumnos del Curso Formativo de Grado Superior DAMP en el centro universitario <a href="https://www.u-tad.com/" target="_blank">
+      U-tad</a> localizado en Las Rozas de Madrid, España. Nicolás Niebles, Javier Martínez, Marcos Pérez y Diego Valverdi.<br /> <br />
+    Para la asignatura de Lenguaje de Marcas y Sistemas de Gestión de Información tuvimos que realizar un sitio web y nació la idea de crear
+    <strong>Entropy Travelling</strong>.<br /><br />Nuestro objetivo es crear el buscador de vuelos y agencia de viajes online definitivo, contando
+  con la tecnología necesaria y la ambición para mejorar un producto, a priori, ya asentado que sin embargo presenta muchas imperfecciones. <br /><br />
+Para nosotros, los cuales viajamos bastante, creemos que si quieres algo bien hecho, tienes que hacerlo tú mismo.<br /><br />
+【=◈︿◈=】</p>
+    </div>
+
+    </div>
+
+<!-- Contact Modal -->
+<div id="contact" class="modal">
+  <div class="modal-content animate-zoom">
+    <div class="container black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="button display-topright large">x</span>
+      <h1>Contacto</h1>
+    </div>
+    <div class="container">
+      <p>Actualmente no estamos disponibles, pero puedes dejarnos un mensaje:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="input padding-16 border" type="text" placeholder="Nombre" required name="Nombre"></p>
+        <p><input class="input padding-16 border" type="text" placeholder="País" required name="Lugar"></p>
+        <p><input class="input padding-16 border" type="text" placeholder="Correo electrónico" required name="Correo"></p>
+        <p><input class="input padding-16 border" type="text" placeholder="Escribe aquí" required name="Mensaje"></p>
+        <p><button class="button" type="submit">ENVIAR 【=◈︿◈=】</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
